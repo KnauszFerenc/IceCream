@@ -1,0 +1,256 @@
+<div class="base"></div>
+<div class="desktop">
+	 <div class="menu"></div>
+	 <h1>Ice Cream</h1>
+	 <div id="a" class="a"></div>
+	 <div id="b" class="a"></div>
+	 <div id="c" class="a"></div>
+	 <div id="d" class="a"></div>
+	 <div id="e" class="a"></div>
+	 <div id="f" class="a"></div>
+	 <div id="g" class="a"></div>
+	 <div id="h" class="a"></div>
+	 <div id="i" class="a"></div>
+	 <div id="j" class="a"></div>
+</div>
+<div class="phone">
+	 <div class="menu"></div>
+	 <h1>Ice Cream</h1>
+	 <div id="k" class="b"></div>
+	 <div id="l" class="b"></div>
+	 <div id="m" class="b"></div>
+	 <div id="n" class="b"></div>
+</div>
+<style>
+@keyframes top{
+100%{top:16vw; } }
+#a{left:5%;
+transform:scale(1.05,1.05) rotateZ(36deg); 
+animation:top 3.5s ease-in-out infinite;
+filter:hue-rotate(36deg);
+z-index:7; }
+#b{left:67%;
+filter:hue-rotate(72deg);
+transform:scale(1.1,1.1) rotateZ(72deg);
+animation:top 2.5s ease-in-out infinite;
+z-index:8; }
+#c{left:45%;
+filter:hue-rotate(108deg);
+transform:scale(1.15,1.15) rotateZ(108deg);
+animation:top 3s ease-in-out infinite;
+z-index:3; }
+#d{left:24%;
+filter:hue-rotate(144deg);
+transform: rotateZ(144deg);
+animation:top 11s ease-in-out infinite;
+z-index:6; }
+#e{left:14%;
+filter:hue-rotate(180deg);
+transform:scale(0.9,0.9) rotateZ(180deg);
+animation:top 6s ease-in-out infinite;
+z-index:3; }
+#f{left:78%;
+filter:hue-rotate(216deg);
+transform: rotateZ(216deg);
+animation:top 9s ease-in-out infinite;
+z-index:6; }
+#g{left:62%;
+filter:hue-rotate(252deg);
+transform:scale(0.95,0.95) rotateZ(252deg);
+animation:top 5s ease-in-out infinite;
+z-index:4; }
+#h{left:36%;
+filter:hue-rotate(288deg);
+transform:scale(0.85,0.85) rotateZ(288deg);
+animation:top 7s ease-in-out infinite;
+z-index:2; }
+#i{left:28%;
+filter:hue-rotate(324deg);
+transform:scale(1.1,1.1) rotateZ(324deg);
+animation:top 2s ease-in-out infinite;
+z-index:8; }
+#j{left:82%;
+filter:hue-rotate(360deg);
+transform:scale(1.05,1.05);
+animation:top 4s ease-in-out infinite;
+z-index:7; }
+#k{left:5%;
+transform:scale(1.15,1.15);
+animation:top 6s ease-in-out infinite;
+z-index:9; }
+#l{left:17%;
+filter:hue-rotate(120deg);
+animation:top 12s ease-in-out infinite;
+z-index:6; }
+#m{left:66%;
+transform:scale(1.1,1.1);
+filter:hue-rotate(240deg);
+animation:top 3s ease-in-out infinite;
+z-index:8; }
+#n{left:52%;
+filter:hue-rotate(180deg);
+transform:scale(1.05,1.05);
+animation:top 9s ease-in-out infinite;
+z-index:7; }
+.a{
+top:-7vw;
+position:absolute; 
+height:5vw;
+width:5vw;
+border-radius:50%;
+background:url('gomboc.png');
+background-size:80%;
+background-position:center;
+background-repeat:no-repeat;}
+.b{
+top:-7vw;
+position:absolute; 
+height:2.5vw;
+width:2.5vw;
+border-radius:50%;
+background:url('gomboc.png');
+background-size:80%;
+background-position:center;
+background-repeat:no-repeat;}
+.menu{
+position:absolute; 
+top:0;
+left:0;
+width:100%;
+height:10%;
+background:rgba(255,255,255,0.2);
+backdrop-filter:blur(2px);
+z-index:10;}
+.menu::before{
+position:absolute;
+content:'';
+top:5%;
+left:5%;
+height:90%;
+width:15px;
+background:url('fagyi3.png');
+background-size:100%;
+background-position:center;
+background-repeat:no-repeat;
+}
+.desktop .menu::before{
+left:2%;
+width:20px; }
+.phone .menu::after{
+position:absolute;
+content:''; 
+top:5%;
+right:5%;
+height:90%;
+width:10%;
+background:url('hamburger.png');
+background-size:100%;
+background-position:center;
+background-repeat:no-repeat;
+}
+.desktop .menu::after{
+position:absolute;
+content:'Flavours - Order - Opening hours - Contact'; 
+top:20%;
+right:2%;
+height:90%;
+width:100%;
+text-align:right;
+font-family:'fagyi2';
+color:black;
+font-size:12px;
+}
+.base{
+position:absolute; 
+top:0;
+left:0;
+width:100vw;
+height:100vh;
+background:linear-gradient(140deg, rgba(255,200,200,0.6) -10%, rgba(255,200,200,0.2) 90%);}
+.phone{
+position:absolute; 
+width:8vw;
+height:15vw;
+top:calc(50vh - 7.5vw);
+right: 30vw;
+background:rgba(255,200,200,1);
+box-shadow: 0 32px 20px -10px rgba(0,0,0,0.8);
+border-radius:1vw;
+overflow:hidden;
+}
+.desktop{
+position:absolute; 
+height:15vw;
+width:30vw;
+left:30vw;
+top:calc(50vh - 7.5vw);
+background:rgba(255,200,200,1);
+box-shadow: 0 55px 20px -30px rgba(0,0,0,0.8);
+border-radius:1vw;
+overflow:hidden;
+}
+ @font-face {
+  font-family: 'fagyi3';
+  src:url('icecreamer.ttf')  format('truetype');}
+   @font-face {
+  font-family: 'fagyi2';
+  src:url('fagyi2.otf')  format('opentype');}
+   @font-face {
+  font-family: 'fagyi1';
+  src:url('fagyi1.otf')  format('opentype');}
+h1{
+position:absolute; 
+width:100%;
+left:0;
+text-align:center;
+font-family:'fagyi1';
+color:white;}
+.phone::before{
+position:absolute; 
+content:'';
+height:100%;
+width:100%;
+background:url('fagyi1.png');
+background-size:80%;
+background-position:center;
+background-repeat:no-repeat;}
+.phone::after{
+position:absolute; 
+width:100%;
+content:'smartista';
+text-transform:uppercase;
+font-weight:900;
+font-size:10px;
+bottom:2%;
+text-align:center;
+color:white;}
+.desktop::after{
+position:absolute; 
+transform:rotateZ(90deg);
+width:100%;
+content:'w w w . s m a r t i s t a . h u';
+font-size:12px;
+top:50%;
+left:-48%;
+text-align:center;
+color:white;}
+.desktop::before{
+position:absolute; 
+top:10%;
+left:-10%;
+content:'';
+height:100%;
+width:100%;
+background:url('fagyi2.png');
+background-size:30%;
+background-position:center;
+background-repeat:no-repeat;}
+.phone h1{
+font-size:30px;
+font-family:'fagyi2';
+top:35%; }
+.desktop h1{
+font-size:80px;
+top:8%;
+z-index:5; }
+</style>
